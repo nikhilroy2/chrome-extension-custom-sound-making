@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "custon_sound",
+    "version": "0.1.0",
+    "content_scripts":[
+        {
+            "matches": ["https://www.fiverr.com/*"],
+            "js": ["jquery.js", "script.js"],
+            "css": ["style.css"]
+        }
+    ]
+    
+} 
