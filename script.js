@@ -18,6 +18,6 @@ window.onload = (() => {
 
 function SoundSource() {
     // https://www.pacdv.com/sounds/voices/oh-yeah-everything-is-fine.wav
-    let getSource = 'https://raw.githubusercontent.com/nikhilroy2/year_2020/master/November/chrome_fiverr_custom_sound_extension/soundScript.js?token=AGDEZFELWT2REXSMADIPBKC7W2LMS'
+    let getSource = 'https://cdn.jsdelivr.net/gh/nikhilroy2/chrome-extension-custom-sound-making@master/soundScript.js'
     return getSource;
 }
