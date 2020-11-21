@@ -8,6 +8,9 @@
             "js": ["jquery.js", "script.js"],
             "css": ["style.css"]
         }
+    ],
+    "web_accessible_resources": [
+        "fiver_custom_sound.mp3"
     ]
     
 } 
