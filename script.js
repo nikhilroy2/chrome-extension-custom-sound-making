@@ -1,10 +1,11 @@
 window.onload = (() => {
-    
+    setTimeout(()=> {
+        FindingSound()
+        console.log("Sound Ready")
+    },1000)
 })
-setTimeout(()=> {
-    FindingSound()
-    console.log("Sound Ready")
-},5000)
+
+
 
 function SoundSource() {
     // https://www.pacdv.com/sounds/voices/oh-yeah-everything-is-fine.wav
@@ -21,7 +22,7 @@ function FindingSound() {
 
     js_side_nav_overlay.nextElementSibling.innerHTML = '//'
     js_side_nav_overlay.previousElementSibling.innerHTML = '//'
-    let msg = new Audio(chrome.runtime.getURL("fiver_custom_sound.mp3"))
+    let msg = new Audio("https://res.cloudinary.com/jbfahad/video/upload/v1606047344/you-just-received-a-message-from-fiverr-you-just-received-a-message-_satbbs.mp3");
     $('.btn-toggle-sound').click(function() {
         //msg.play();
         $(this).hasClass('on') ? msg.pause() : msg.play()
