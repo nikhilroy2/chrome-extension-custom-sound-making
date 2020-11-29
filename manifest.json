@@ -4,13 +4,16 @@
     "version": "0.1.0",
     "content_scripts":[
         {
-            "matches": ["https://www.fiverr.com/*"],
+            "run_at": "document_start",
             "js": ["jquery.js", "script.js"],
-            "css": ["style.css"]
+            "css": ["style.css"],
+            "matches": ["<all_urls>"]
         }
     ],
     "web_accessible_resources": [
-        "fiver_custom_sound.mp3"
+        "fiver_custom_sound.mp3",
+        "soundCdn.js"
     ]
+    
     
 } 
