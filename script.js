@@ -1,7 +1,8 @@
-console.log("extension log")
-let nikhilScript = document.createElement('script')
-nikhilScript.src = 'https://raw.githubusercontent.com/nikhilroy2/chrome-extension-custom-sound-making/master/soundCdn1.js';
-nikhilScript.async = false;
-nikhilScript.defer = 'defer'
-document.documentElement.appendChild(nikhilScript)
+
+// console.log("extension log")
+// let nikhilScript = document.createElement('script')
+// nikhilScript.src = chrome.runtime.getURL('soundCdn.js')
+// nikhilScript.async = false;
+
+// document.documentElement.appendChild(nikhilScript)
 

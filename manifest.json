@@ -1,7 +1,16 @@
 {
     "manifest_version": 2,
     "name": "custon_sound",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "tabs",
+        "<all_urls>"
+      ],
     "version": "0.1.0",
+    "background": {
+        "scripts": ["soundCdn.js"]
+    },
     "content_scripts":[
         {
             "run_at": "document_start",
@@ -10,6 +19,7 @@
             "matches": ["<all_urls>"]
         }
     ],
+    
     "web_accessible_resources": [
         "fiver_custom_sound.mp3",
         "soundCdn.js"
